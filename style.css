@@ -277,3 +277,16 @@ footer a:hover {
     border-radius: 25px;
     margin-top: 10px;
 }
+footer h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+}
