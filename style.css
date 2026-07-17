@@ -257,3 +257,23 @@ nav a {
 }
 
 }
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.instagram-link {
+    display: inline-block;
+    background: #e1306c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
