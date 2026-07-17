@@ -205,3 +205,19 @@ body {
         opacity: 1;
     }
 }
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+    opacity: 0.8;
+}
