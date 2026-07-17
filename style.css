@@ -202,4 +202,34 @@ body {
     padding: 0;
     border-radius: 0;
 }
- 
+ @media(max-width:768px){
+
+.hero {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 18px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 8px;
+}
+
+}
