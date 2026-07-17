@@ -206,19 +206,16 @@ body {
     }
 }
  
-.whatsapp-btn {
+ .whatsapp-btn {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 15px;
+    right: 15px;
     background: #25D366;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 14px;
     border-radius: 50px;
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
     z-index: 1000;
-}
-
-.whatsapp-btn:hover {
-    opacity: 0.8;
 }
