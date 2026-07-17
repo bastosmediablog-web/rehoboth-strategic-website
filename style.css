@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #f8fff8;
+    color: #333;
+}
+
+
+header {
+    background: #146b2e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.logo h1 {
+    font-size: 24px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #ffd700;
+}
+
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("images/farm.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #ffd700;
+    color: #146b2e;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+.welcome {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.welcome h2 {
+    color: #146b2e;
+    margin-bottom: 20px;
+}
+
+
+.welcome p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.card h3 {
+    color: #146b2e;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background: #146b2e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+
+@media(max-width:768px){
+
+header {
+    flex-direction: column;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+}
