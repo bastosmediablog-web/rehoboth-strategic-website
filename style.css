@@ -196,5 +196,10 @@ body {
         opacity: 1;
     }
 }
- 
+ nav a:last-child {
+    background: transparent;
+    color: white;
+    padding: 0;
+    border-radius: 0;
+}
  
