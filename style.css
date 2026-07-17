@@ -437,3 +437,27 @@ width:100%;
 }
 
 }
+.founder-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-founder {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .founder-image img {
+        max-width: 280px;
+    }
+
+    .about-founder {
+        padding: 20px;
+        text-align: center;
+    }
+}
