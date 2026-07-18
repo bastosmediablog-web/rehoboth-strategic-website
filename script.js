@@ -56,9 +56,7 @@ function displayProducts(items){
 }
 
 
-window.onload = function(){
-    displayProducts(products);
-};
+displayProducts(products);
 console.log(products);
 
 
