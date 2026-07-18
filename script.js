@@ -52,7 +52,9 @@ function displayProducts(items){
 }
 
 
-displayProducts(products);
+window.onload = function(){
+    displayProducts(products);
+};
 console.log(products);
 
 
