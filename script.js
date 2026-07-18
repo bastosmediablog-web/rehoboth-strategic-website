@@ -122,3 +122,44 @@ JSON.stringify(cart)
 alert(product.name + " added to cart!");
 
 }
+function addToCart(productId){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let product = products.find(
+item => item.id === productId
+);
+
+let existingProduct = cart.find(
+item => item.id === productId
+);
+
+
+if(existingProduct){
+
+existingProduct.quantity++;
+
+}
+
+else{
+
+cart.push({
+id: product.id,
+name: product.name,
+image: product.image,
+price: product.price,
+quantity: 1
+});
+
+}
+
+
+localStorage.setItem(
+"cart",
+JSON.stringify(cart)
+);
+
+
+alert(product.name + " added to cart!");
+
+}
