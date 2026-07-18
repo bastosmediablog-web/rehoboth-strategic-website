@@ -135,8 +135,8 @@ product.quantity +
 });
 
 
-window.open(
-"https://wa.me/YOURNUMBER?text=" + message
+ window.open(
+"https://wa.me/12109848515?text=" + message
 );
 
 }
