@@ -3,62 +3,53 @@ const container = document.getElementById("product-container");
 
 function displayProducts(items){
 
-container.innerHTML="";
+    container.innerHTML = "";
 
+    items.forEach(product => {
 
-items.forEach(product=>{
+        const productCard = document.createElement("div");
+        productCard.className = "product-card";
 
+        productCard.innerHTML = `
 
-let stockStatus = product.stock 
-? "✅ In Stock" 
-: "❌ Out of Stock";
+        <img src="${product.image}" 
+        alt="${product.name}" 
+        loading="lazy"
+        decoding="async">
 
+        <h3>${product.name}</h3>
 
-let button = product.stock
-? `<button onclick="addToCart(${product.id})">
-Add To Cart
-</button>`
-:
-`<button disabled>
-Out of Stock
-</button>`;
+        <p>${product.description}</p>
 
+        <p>
+        <strong>Category:</strong> ${product.category}
+        </p>
 
- container.innerHTML += `
+        <p>
+        <strong>${product.stock ? "✅ In Stock" : "❌ Out of Stock"}</strong>
+        </p>
 
-<div class="product-card">
+        <h4>${product.price}</h4>
 
- <img src="${product.image}" 
-alt="${product.name}" 
-loading="lazy"
-decoding="async">
+        ${
+        product.stock
+        ?
+        `<button onclick="addToCart(${product.id})">
+        Add To Cart
+        </button>`
+        :
+        `<button disabled>
+        Out of Stock
+        </button>`
+        }
 
-<h3>${product.name}</h3>
+        `;
 
-<p>${product.description}</p>
+        container.appendChild(productCard);
 
-<p>
-<strong>Category:</strong> ${product.category}
-</p>
-
-<p>
-<strong>${stockStatus}</strong>
-</p>
-
-<h4>${product.price}</h4>
-
-${button}
-
-</div>
-
-`;
-
-
-});
-
+    });
 
 }
-
 
 
 displayProducts(products);
@@ -67,18 +58,18 @@ displayProducts(products);
 
 function filterProducts(category){
 
-if(category=="All"){
+    if(category === "All"){
 
-displayProducts(products);
+        displayProducts(products);
 
-}
+    } else {
 
-else{
+        const filteredProducts = products.filter(
+        product => product.category === category
+        );
 
-let filtered = products.filter(product=>product.category == category);
+        displayProducts(filteredProducts);
 
-displayProducts(filtered);
-
-}
+    }
 
 }
