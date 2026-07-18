@@ -24,41 +24,29 @@ Out of Stock
 </button>`;
 
 
-container.innerHTML += `
-
+ container.innerHTML += `
 
 <div class="product-card">
 
-
- <img src="${product.image}" alt="${product.name}" loading="lazy">
-
+<img src="${product.image}" alt="${product.name}" loading="lazy">
 
 <h3>${product.name}</h3>
 
-
 <p>${product.description}</p>
-
 
 <p>
 <strong>Category:</strong> ${product.category}
 </p>
 
-
 <p>
 <strong>${stockStatus}</strong>
 </p>
 
-
-<h4>
-${product.price}
-</h4>
-
+<h4>${product.price}</h4>
 
 ${button}
 
-
 </div>
-
 
 `;
 
