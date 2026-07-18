@@ -1,5 +1,9 @@
 const container = document.getElementById("product-container");
 
+if(!container){
+    console.log("Product container not found");
+}
+
 
 function displayProducts(items){
 
