@@ -17,9 +17,7 @@ function displayProducts(items){
         productCard.innerHTML = `
 
         <img src="${product.image}" 
-        alt="${product.name}" 
-        loading="lazy"
-        decoding="async">
+alt="${product.name}">
 
         <h3>${product.name}</h3>
 
