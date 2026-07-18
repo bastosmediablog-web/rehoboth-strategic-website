@@ -753,3 +753,44 @@ opacity:0.8;
 }
 
 }
+/* Professional Add To Cart Button */
+
+.product-card button {
+
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+
+}
+
+
+.product-card button:hover {
+
+    background: #1b5e20;
+    transform: translateY(-3px);
+
+}
+
+
+.product-card button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* Out of Stock Button */
+
+.product-card button:disabled {
+
+    background: #999;
+    cursor: not-allowed;
+
+}
