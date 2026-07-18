@@ -53,6 +53,7 @@ function displayProducts(items){
 
 
 displayProducts(products);
+console.log(products);
 
 
 
