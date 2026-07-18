@@ -28,7 +28,7 @@ Out of Stock
 
 <div class="product-card">
 
-<img src="${product.image}" alt="${product.name}" loading="lazy">
+ <img src="${product.image}" alt="${product.name}" loading="lazy" width="300" height="300">
 
 <h3>${product.name}</h3>
 
