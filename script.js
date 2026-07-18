@@ -163,3 +163,30 @@ JSON.stringify(cart)
 alert(product.name + " added to cart!");
 
 }
+function updateCartCount(){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let count = 0;
+
+
+cart.forEach(product => {
+
+count += product.quantity;
+
+});
+
+
+let cartCount = document.getElementById("cart-count");
+
+
+if(cartCount){
+
+cartCount.innerHTML = count;
+
+}
+
+}
+
+
+updateCartCount();
