@@ -211,3 +211,73 @@ description: "Fresh Ukazi leaves carefully prepared for customers."
 }
 
 ];
+,
+{
+id: 22,
+name: "Sweet Bitter Leaf Seeds",
+category: "Seeds",
+image: "sweatbitterleafseeds.webp",
+price: "$10 — 100 seeds",
+stock: true,
+description: "Sweet bitter leaf seeds, carefully selected for healthy home gardens and farm planting."
+},
+
+{
+id: 23,
+name: "Njama Njama Seeds",
+category: "Seeds",
+image: "njamaseeds.png",
+price: "$10 — 100 seeds",
+stock: true,
+description: "Quality Njama Njama seeds for growing fresh, nutritious leafy vegetables."
+},
+
+{
+id: 24,
+name: "Jute Seeds",
+category: "Seeds",
+image: "juteseeds.webp",
+price: "$10 — 100 seeds",
+stock: true,
+description: "Jute seeds for growing tender, flavorful leaves used in traditional soups and dishes."
+},
+
+{
+id: 25,
+name: "Eggplant Seeds",
+category: "Seeds",
+image: "eggplant.webp",
+price: "$10 — 100 seeds",
+stock: true,
+description: "High-quality eggplant seeds for productive home gardens and farm cultivation."
+},
+
+{
+id: 26,
+name: "Efo Tete Seeds",
+category: "Seeds",
+image: "efoteteseeds.webp",
+price: "$10 — 100 seeds",
+stock: true,
+description: "Efo Tete seeds for growing fresh, nutritious African spinach."
+},
+
+{
+id: 27,
+name: "Corn Seeds",
+category: "Seeds",
+image: "cornseeds.webp",
+price: "$10 — 100 seeds",
+stock: true,
+description: "Quality corn seeds for dependable planting and healthy harvests."
+},
+
+{
+id: 28,
+name: "Bitter Leaf Seedlings",
+category: "Seedlings",
+image: "bitterleafseedlings.jpeg",
+price: "Contact for price",
+stock: true,
+description: "Healthy bitter leaf seedlings, ready for transplanting into your garden or farm."
+}
