@@ -621,7 +621,41 @@ nav {
     padding: 20px 15px;
     box-sizing: border-box;
 }
+/* WhatsApp checkout button */
+.cart-section .whatsapp-checkout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: min(100%, 390px);
+  margin: 20px auto;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  box-shadow: 0 10px 22px rgba(18, 140, 126, 0.25);
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
 
+.cart-section .whatsapp-checkout-btn:hover {
+  background: linear-gradient(135deg, #20bf5a, #0d766a);
+  box-shadow: 0 14px 28px rgba(18, 140, 126, 0.32);
+  transform: translateY(-2px);
+}
+
+.cart-section .whatsapp-checkout-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .cart-section .whatsapp-checkout-btn {
+    width: 100%;
+  }
+}
 
 .cart-item {
     display: block;
