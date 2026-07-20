@@ -927,3 +927,72 @@ opacity:0.8;
     font-size: 30px;
   }
 }
+/* Payment methods */
+.payment-methods {
+  max-width: 600px;
+  margin: 35px auto 10px;
+  padding: 28px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.payment-methods h2 {
+  color: #146b2e;
+  margin-bottom: 10px;
+}
+
+.payment-intro,
+.payment-note {
+  color: #555;
+  line-height: 1.6;
+}
+
+.payment-option {
+  display: block;
+  margin: 18px 0;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.payment-option strong,
+.payment-option span {
+  display: block;
+}
+
+.payment-option strong {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cashapp-option {
+  background: #00d632;
+  color: #111;
+}
+
+.zelle-option {
+  background: #6d1ed4;
+  color: white;
+}
+
+.zelle-option p {
+  margin: 10px 0;
+}
+
+.zelle-option button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background: white;
+  color: #6d1ed4;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-note {
+  font-size: 14px;
+  margin-top: 18px;
+}
