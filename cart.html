@@ -61,11 +61,37 @@ alt="Rehoboth Strategic LLC Logo">
 <h2 id="cart-total"></h2>
 
 
- <button class="whatsapp-checkout-btn" type="button" onclick="checkoutWhatsApp()">
-  <span>💬</span>
-  Checkout on WhatsApp
-  <span>→</span>
+  <button class="whatsapp-checkout-btn" type="button" onclick="checkoutWhatsApp()">
+  💬 Checkout on WhatsApp →
 </button>
+
+<section class="payment-methods">
+  <h2>Choose a Payment Method</h2>
+  <p class="payment-intro">
+    Complete your order, then send payment confirmation through WhatsApp.
+  </p>
+
+  <a class="payment-option cashapp-option"
+     href="https://cash.app/$seuntextkenny"
+     target="_blank"
+     rel="noopener">
+    <strong>Cash App</strong>
+    <span>Pay with Cash App</span>
+  </a>
+
+  <div class="payment-option zelle-option">
+    <strong>Zelle</strong>
+    <span>Send payment to Oluwaseun</span>
+    <p>Phone: <b>210-984-8515</b></p>
+    <button type="button" onclick="navigator.clipboard.writeText('2109848515')">
+      Copy Zelle Number
+    </button>
+  </div>
+
+  <p class="payment-note">
+    Please include your name and order details in the payment note.
+  </p>
+</section>
 
 
 </section>
