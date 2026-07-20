@@ -1157,3 +1157,134 @@ opacity:0.8;
     grid-template-columns: 1fr;
   }
 }
+/* About page */
+.about-hero,
+.about-values {
+  padding: 70px 20px;
+  text-align: center;
+  background: #f4fbf5;
+}
+
+.about-hero h2,
+.about-values h2 {
+  color: #146b2e;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.about-hero > p:last-child {
+  max-width: 680px;
+  margin: auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+.about-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  max-width: 1150px;
+  margin: auto;
+  padding: 75px 20px;
+}
+
+.about-story-image,
+.about-story-content {
+  flex: 1;
+}
+
+.about-story-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-story-content h2 {
+  color: #146b2e;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.about-story-content h3 {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.about-story-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-mission {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px 70px;
+}
+
+.about-mission-card {
+  padding: 35px;
+  text-align: center;
+  background: #146b2e;
+  color: white;
+  border-radius: 16px;
+}
+
+.about-mission-card span {
+  font-size: 36px;
+}
+
+.about-mission-card h3 {
+  margin: 15px 0;
+}
+
+.about-mission-card p {
+  line-height: 1.7;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1150px;
+  margin: 35px auto 0;
+}
+
+.about-value-card {
+  padding: 25px 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+}
+
+.about-value-card h3 {
+  color: #146b2e;
+  margin-bottom: 10px;
+}
+
+.about-value-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-hero h2,
+  .about-values h2,
+  .about-story-content h2 {
+    font-size: 30px;
+  }
+
+  .about-story {
+    flex-direction: column;
+    padding: 55px 20px;
+  }
+
+  .about-mission,
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+}
