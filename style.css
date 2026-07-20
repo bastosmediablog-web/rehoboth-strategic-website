@@ -1288,3 +1288,75 @@ opacity:0.8;
     grid-template-columns: 1fr;
   }
 }
+.why-shop {
+  padding: 80px 24px;
+  background: #f4f8f0;
+}
+
+.why-shop__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-label {
+  color: #5d7a3a;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+}
+
+.why-shop h2 {
+  margin: 12px 0;
+  color: #264229;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.why-shop__content > p:last-of-type {
+  max-width: 620px;
+  margin: 0 auto 38px;
+  color: #5f665c;
+  line-height: 1.7;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.trust-card {
+  padding: 28px 22px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(38, 66, 41, 0.08);
+  text-align: left;
+}
+
+.trust-card h3 {
+  margin: 0 0 10px;
+  color: #264229;
+  font-size: 1.15rem;
+}
+
+.trust-card p {
+  margin: 0;
+  color: #667063;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .why-shop {
+    padding: 60px 20px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
