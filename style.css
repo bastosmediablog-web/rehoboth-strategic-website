@@ -1360,3 +1360,20 @@ opacity:0.8;
     grid-template-columns: 1fr;
   }
 }
+.paypal-option{
+
+background:#0070BA;
+
+color:white;
+
+border:2px solid #0070BA;
+
+}
+
+.paypal-option:hover{
+
+background:#005EA6;
+
+transform:translateY(-3px);
+
+}
