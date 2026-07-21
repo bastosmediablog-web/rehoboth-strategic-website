@@ -1,11 +1,9 @@
-const container = document.getElementById("product-container");
+ const container = document.getElementById("product-container");
 
-if(!container){
-    console.log("Product container not found");
-}
+// Display Products
+function displayProducts(items) {
 
-
-function displayProducts(items){
+    if (!container) return;
 
     container.innerHTML = "";
 
@@ -15,36 +13,31 @@ function displayProducts(items){
         productCard.className = "product-card";
 
         productCard.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
 
-        <img src="${product.image}" 
-alt="${product.name}">
+            <h3>${product.name}</h3>
 
-        <h3>${product.name}</h3>
+            <p>${product.description}</p>
 
-        <p>${product.description}</p>
+            <p><strong>Category:</strong> ${product.category}</p>
 
-        <p>
-        <strong>Category:</strong> ${product.category}
-        </p>
+            <p>
+                <strong>
+                    ${product.stock ? "✅ In Stock" : "❌ Out of Stock"}
+                </strong>
+            </p>
 
-        <p>
-        <strong>${product.stock ? "✅ In Stock" : "❌ Out of Stock"}</strong>
-        </p>
+            <h4>${product.price}</h4>
 
-        <h4>${product.price}</h4>
-
-        ${
-        product.stock
-        ?
-        `<button onclick="addToCart(${product.id})">
-        Add To Cart
-        </button>`
-        :
-        `<button disabled>
-        Out of Stock
-        </button>`
-        }
-
+            ${
+                product.stock
+                ? `<button onclick="addToCart(${product.id})">
+                    Add To Cart
+                  </button>`
+                : `<button disabled>
+                    Out of Stock
+                  </button>`
+            }
         `;
 
         container.appendChild(productCard);
@@ -53,22 +46,23 @@ alt="${product.name}">
 
 }
 
+// Load products when page opens
+if (typeof products !== "undefined") {
+    displayProducts(products);
+}
 
-displayProducts(products);
-console.log(products);
 
+// Filter Products
+function filterProducts(category) {
 
-
-function filterProducts(category){
-
-    if(category === "All"){
+    if (category === "All") {
 
         displayProducts(products);
 
     } else {
 
-        const filteredProducts = products.filter(
-        product => product.category === category
+        const filteredProducts = products.filter(product =>
+            product.category === category
         );
 
         displayProducts(filteredProducts);
@@ -76,117 +70,66 @@ function filterProducts(category){
     }
 
 }
-function addToCart(productId){
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
-let product = products.find(
-item => item.id === productId
-);
+// Add To Cart
+function addToCart(productId) {
 
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-let existingProduct = cart.find(
-item => item.id === productId
-);
+    const product = products.find(item => item.id === productId);
 
+    if (!product) return;
 
+    const existingProduct = cart.find(item => item.id === productId);
 
-if(existingProduct){
+    if (existingProduct) {
 
-existingProduct.quantity++;
+        existingProduct.quantity++;
 
-}
+    } else {
 
-else{
+        cart.push({
+            id: product.id,
+            name: product.name,
+            image: product.image,
+            price: product.price,
+            quantity: 1
+        });
 
-cart.push({
+    }
 
-id: product.id,
-name: product.name,
-image: product.image,
-price: product.price,
-quantity: 1
+    localStorage.setItem("cart", JSON.stringify(cart));
 
-});
+    updateCartCount();
 
-}
-
-
-localStorage.setItem(
-"cart",
-JSON.stringify(cart)
-);
-
-
-alert(product.name + " added to cart!");
-
-}
-function addToCart(productId){
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-let product = products.find(
-item => item.id === productId
-);
-
-let existingProduct = cart.find(
-item => item.id === productId
-);
-
-
-if(existingProduct){
-
-existingProduct.quantity++;
-
-}
-
-else{
-
-cart.push({
-id: product.id,
-name: product.name,
-image: product.image,
-price: product.price,
-quantity: 1
-});
+    alert(product.name + " added to cart!");
 
 }
 
 
-localStorage.setItem(
-"cart",
-JSON.stringify(cart)
-);
+// Update Cart Counter
+function updateCartCount() {
 
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-alert(product.name + " added to cart!");
+    let count = 0;
 
-}
-function updateCartCount(){
+    cart.forEach(product => {
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        count += product.quantity;
 
-let count = 0;
+    });
 
+    const cartCount = document.getElementById("cart-count");
 
-cart.forEach(product => {
+    if (cartCount) {
 
-count += product.quantity;
+        cartCount.textContent = count;
 
-});
-
-
-let cartCount = document.getElementById("cart-count");
-
-
-if(cartCount){
-
-cartCount.innerHTML = count;
+    }
 
 }
 
-}
-
-
+// Run cart counter when page loads
 updateCartCount();
