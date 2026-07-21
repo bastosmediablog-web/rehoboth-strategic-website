@@ -6,7 +6,11 @@ function displayProducts(items) {
     if (!container) return;
 
     container.innerHTML = "";
+const count = document.getElementById("productCount");
 
+if (count) {
+    count.innerHTML = `${items.length} Organic Products Available`;
+}
     items.forEach(product => {
 
         const productCard = document.createElement("div");
