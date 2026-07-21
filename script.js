@@ -12,33 +12,54 @@ function displayProducts(items) {
         const productCard = document.createElement("div");
         productCard.className = "product-card";
 
-        productCard.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
+        
+                 productCard.innerHTML = `
 
-            <h3>${product.name}</h3>
+<div class="product-image">
 
-            <p>${product.description}</p>
+    <img src="${product.image}" alt="${product.name}">
 
-            <p><strong>Category:</strong> ${product.category}</p>
+    <span class="organic-badge">🌿 Organic</span>
 
-            <p>
-                <strong>
-                    ${product.stock ? "✅ In Stock" : "❌ Out of Stock"}
-                </strong>
-            </p>
+</div>
 
-            <h4>${product.price}</h4>
+<div class="product-details">
 
-            ${
-                product.stock
-                ? `<button onclick="addToCart(${product.id})">
-                    Add To Cart
-                  </button>`
-                : `<button disabled>
-                    Out of Stock
-                  </button>`
-            }
-        `;
+    <h3>${product.name}</h3>
+
+    <p class="product-description">
+        ${product.description}
+    </p>
+
+    <p class="category">
+        <strong>Category:</strong> ${product.category}
+    </p>
+
+    <p class="stock">
+        ${product.stock ? "✅ In Stock" : "❌ Out of Stock"}
+    </p>
+
+    <div class="price-row">
+
+        <h4>${product.price}</h4>
+
+        ${
+            product.stock
+            ?
+            `<button onclick="addToCart(${product.id})">
+                🛒 Add to Cart
+            </button>`
+            :
+            `<button disabled>
+                Out of Stock
+            </button>`
+        }
+
+    </div>
+
+</div>
+
+`;
 
         container.appendChild(productCard);
 
