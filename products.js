@@ -37,7 +37,7 @@
   },
   {
     id: 5,
-    name: "Ugwu (Fluted Pumpkin Leaf)",
+     name: "Ugu (Fluted Pumpkin Leaf)",
     category: "Fresh Leaves",
     image: "IMG_5829.jpeg",
     price: "Contact for price",
@@ -251,4 +251,84 @@
     stock: true,
     description: "Healthy bitter leaf seedlings, ready for transplanting into your garden or farm."
   }
+  ,
+{
+    id: 29,
+    name: "Fresh Organic Scent Leaf",
+    category: "Fresh Leaves",
+    image: "fresh scent leaf.webp",
+    price: "Contact for price",
+    stock: true,
+    description: "Fresh organic scent leaves harvested daily. Perfect for soups, teas, and healthy cooking."
+},
+
+{
+    id: 30,
+    name: "Fresh Organic Bitter Leaf",
+    category: "Fresh Leaves",
+    image: "bitter leaf.webp",
+    price: "Contact for price",
+    stock: true,
+    description: "Fresh organic bitter leaves carefully harvested for nutritious traditional meals."
+},
+
+{
+    id: 31,
+    name: "Fresh Organic Sweet Bitter Leaf",
+    category: "Fresh Leaves",
+    image: "sweet bitter leaf.png",
+    price: "Contact for price",
+    stock: true,
+    description: "Tender organic sweet bitter leaves with a mild taste and excellent nutritional value."
+},
+
+{
+    id: 32,
+    name: "Organic Chaya Leaf",
+    category: "Fresh Leaves",
+    image: "chaya leaf.jfif",
+    price: "Contact for price",
+    stock: true,
+    description: "Fresh organic Chaya leaves, often called the miracle leaf because of their rich nutrients."
+},
+
+{
+    id: 33,
+    name: "Organic African Eggplant",
+    category: "Fresh Leaves",
+    image: "eggplant african.webp",
+    price: "Contact for price",
+    stock: true,
+    description: "Fresh organic African eggplant harvested directly from our farm."
+},
+
+{
+    id: 34,
+    name: "Organic Scent Leaf Seeds",
+    category: "Seeds",
+    image: "scent leaf seeds.webp",
+    price: "$10 - 100 seeds",
+    stock: true,
+    description: "Premium organic scent leaf seeds with excellent germination for home gardens and farms."
+},
+
+{
+    id: 35,
+    name: "Organic Ugu Seedlings",
+    category: "Seedlings",
+    image: "ugu seedlings.jpeg",
+    price: "Contact for price",
+    stock: true,
+    description: "Healthy organic Ugu seedlings ready for transplanting and vigorous growth."
+},
+
+{
+    id: 36,
+    name: "Organic Soursop Seedlings",
+    category: "Seedlings",
+    image: "sour soup seedlings.webp",
+    price: "Contact for price",
+    stock: true,
+    description: "Healthy organic soursop seedlings grown for strong growth and productive fruiting."
+}
 ];
