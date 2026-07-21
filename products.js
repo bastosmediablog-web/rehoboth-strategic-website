@@ -15,7 +15,7 @@
     image: "IMG_5826.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh cassava leaves carefully harvested for traditional recipes."
+    description: "Fresh organic cassava leaves carefully harvested for traditional recipes."
   },
   {
     id: 3,
@@ -24,7 +24,7 @@
     image: "IMG_5827.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh spinach loaded with nutrients and perfect for healthy meals."
+    description: "Fresh organic spinach loaded with nutrients and perfect for healthy meals."
   },
   {
     id: 4,
@@ -33,7 +33,7 @@
     image: "IMG_5828.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh water leaf for soups and vegetable dishes."
+    description: "Fresh organic water leaf for soups and vegetable dishes."
   },
   {
     id: 5,
@@ -42,7 +42,7 @@
     image: "IMG_5829.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Premium fluted pumpkin leaves rich in essential nutrients."
+    description: "Premium  organic fluted pumpkin leaves rich in essential nutrients."
   },
   {
     id: 6,
@@ -51,7 +51,7 @@
     image: "IMG_5830.webp",
     price: "Contact for price",
     stock: true,
-    description: "Fresh nutrient-dense kale carefully grown for healthy living."
+    description: "Fresh organic nutrient-dense kale carefully grown for healthy living."
   },
   {
     id: 7,
@@ -60,7 +60,7 @@
     image: "IMG_5831.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Natural superfood containing vitamins, minerals and antioxidants."
+    description: "Natural organic superfood containing vitamins, minerals and antioxidants."
   },
   {
     id: 8,
@@ -69,7 +69,7 @@
     image: "IMG_5832.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh soko leaves cultivated for taste and nutrition."
+    description: "Fresh organic soko leaves cultivated for taste and nutrition."
   },
   {
     id: 9,
@@ -78,7 +78,7 @@
     image: "IMG_5833.webp",
     price: "Contact for price",
     stock: true,
-    description: "Tender jute leaves perfect for traditional soups."
+    description: " fresh organic Tender jute leaves perfect for traditional soups."
   },
   {
     id: 10,
@@ -87,7 +87,7 @@
     image: "IMG_5835.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh leafy vegetables with excellent nutritional value."
+    description: "Fresh organic leafy vegetables with excellent nutritional value."
   },
   {
     id: 11,
@@ -96,7 +96,7 @@
     image: "IMG_5845.webp",
     price: "Contact for price",
     stock: true,
-    description: "Fresh nutritious huckleberry leaves carefully grown for healthy meals."
+    description: "Fresh organic nutritious huckleberry leaves carefully grown for healthy meals."
   },
   {
     id: 12,
@@ -105,7 +105,7 @@
     image: "IMG_5847.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh okro leaves suitable for traditional and healthy dishes."
+    description: "Fresh organic okro leaves suitable for traditional and healthy dishes."
   },
   {
     id: 13,
@@ -114,7 +114,7 @@
     image: "IMG_5848.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh aromatic rosemary leaves."
+    description: "Fresh organic aromatic rosemary leaves."
   },
   {
     id: 14,
@@ -123,7 +123,7 @@
     image: "IMG_5849.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh sour leaves with great taste and nutritional benefits."
+    description: "Fresh organic sour leaves with great taste and nutritional benefits."
   },
   {
     id: 15,
@@ -132,7 +132,7 @@
     image: "IMG_5850.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh potato leaves harvested with care."
+    description: "Fresh organic potato leaves harvested with care."
   },
   {
     id: 16,
@@ -141,7 +141,7 @@
     image: "IMG_5851.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh Oha leaves perfect for traditional meals."
+    description: "Fresh organic Oha leaves perfect for traditional meals."
   },
   {
     id: 17,
@@ -150,7 +150,7 @@
     image: "IMG_5852.webp",
     price: "Contact for price",
     stock: true,
-    description: "Fresh Utazi leaves with natural flavor."
+    description: "Fresh organic Utazi leaves with natural flavor."
   },
   {
     id: 18,
@@ -159,7 +159,7 @@
     image: "IMG_5857.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh Atama leaves for delicious meals."
+    description: "Fresh organic Atama leaves for delicious meals."
   },
   {
     id: 19,
@@ -168,7 +168,7 @@
     image: "IMG_5858.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh cocoyam leaves."
+    description: "Fresh organic cocoyam leaves."
   },
   {
     id: 20,
@@ -177,7 +177,7 @@
     image: "IMG_5859.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh Uziza leaves for traditional dishes."
+    description: "Fresh organic Uziza leaves for traditional dishes."
   },
   {
     id: 21,
@@ -186,7 +186,7 @@
     image: "IMG_5860.jpeg",
     price: "Contact for price",
     stock: true,
-    description: "Fresh Ukazi leaves carefully prepared for customers."
+    description: "Fresh organic Ukazi leaves carefully prepared for customers."
   },
   {
     id: 22,
@@ -204,7 +204,7 @@
     image: "njamaseeds.png",
     price: "$10 - 100 seeds",
     stock: true,
-    description: "Quality Njama Njama seeds for growing fresh, nutritious leafy vegetables."
+    description: "Quality organic Njama Njama seeds for growing fresh, nutritious leafy vegetables."
   },
   {
     id: 24,
@@ -213,7 +213,7 @@
     image: "juteseeds.webp",
     price: "$10 - 100 seeds",
     stock: true,
-    description: "Jute seeds for growing tender, flavorful leaves used in traditional soups and dishes."
+    description: " Organic Jute seeds for growing tender, flavorful leaves used in traditional soups and dishes."
   },
   {
     id: 25,
