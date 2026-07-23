@@ -119,27 +119,75 @@ displayCart();
 
 
 
-function checkoutWhatsApp(){
+function checkoutWhatsApp() {
 
-let message = "Hello Rehoboth Strategic LLC, I want to order:%0A%0A";
+    if (cart.length === 0) {
+        alert("Your cart is empty.");
+        return;
+    }
 
+    const fullname = document.getElementById("fullname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const address = document.getElementById("address").value.trim();
+    const city = document.getElementById("city").value.trim();
+    const state = document.getElementById("state").value.trim();
+    const country = document.getElementById("country").value.trim();
+    const zipcode = document.getElementById("zipcode").value.trim();
+    const notes = document.getElementById("notes").value.trim();
 
-cart.forEach(product=>{
+    if (
+        !fullname ||
+        !email ||
+        !phone ||
+        !address ||
+        !city ||
+        !state ||
+        !country
+    ) {
+        alert("Please complete all required customer information.");
+        return;
+    }
 
-message += 
-product.name + 
-" - Quantity: " + 
-product.quantity + 
-"%0A";
+    let message = "🛒 *NEW ORDER*%0A%0A";
 
-});
+    message += "*Customer Information*%0A";
+    message += "Name: " + fullname + "%0A";
+    message += "Email: " + email + "%0A";
+    message += "Phone: " + phone + "%0A";
+    message += "Address: " + address + "%0A";
+    message += "City: " + city + "%0A";
+    message += "State: " + state + "%0A";
+    message += "Country: " + country + "%0A";
 
+    if (zipcode !== "") {
+        message += "ZIP Code: " + zipcode + "%0A";
+    }
 
- window.open(
-"https://wa.me/12109848515?text=" + message
-);
+    message += "%0A*Order Items*%0A";
 
-}
+    let totalItems = 0;
+
+    cart.forEach(product => {
+        message += "• " + product.name + " x " + product.quantity + "%0A";
+        totalItems += product.quantity;
+    });
+
+    message += "%0ATotal Items: " + totalItems + "%0A";
+
+    if (notes !== "") {
+        message += "%0A*Order Notes*%0A";
+        message += notes + "%0A";
+    }
+
+    message += "%0AThank you!";
+
+    window.open(
+        "https://wa.me/12109848515?text=" + message,
+        "_blank"
+    );
+} 
+ 
 
 
 
