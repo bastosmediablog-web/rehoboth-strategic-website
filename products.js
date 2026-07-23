@@ -99,14 +99,15 @@
     description: "Fresh organic nutritious huckleberry leaves carefully grown for healthy meals."
   },
   {
+     {
     id: 12,
     name: "Okro Leaves",
     category: "Fresh Leaves",
-    image: "IMG_5847.jpeg",
+    image: "okraleaf.jpeg",
     price: "Contact for price",
     stock: true,
     description: "Fresh organic okro leaves suitable for traditional and healthy dishes."
-  },
+},
   {
     id: 13,
     name: "Rosemary Leaves",
