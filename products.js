@@ -98,8 +98,7 @@
     stock: true,
     description: "Fresh organic nutritious huckleberry leaves carefully grown for healthy meals."
   },
-  {
-     
+ {
     id: 12,
     name: "Okro Leaves",
     category: "Fresh Leaves",
